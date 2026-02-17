@@ -18,9 +18,9 @@ class AdfFilamentThemePlugin implements Plugin
         return app(static::class);
     }
 
-    public function register(Panel $panel): Panel
+    public function register(Panel $panel): void
     {
-        return $panel
+        $panel
             ->darkMode(false)
             ->favicon('https://addisfortune.news/wp-content/themes/addis-fortune/icons/favicon.ico')
             ->brandLogo('https://addisfortune.news/wp-content/uploads/2022/03/adf_logo-large.png')
