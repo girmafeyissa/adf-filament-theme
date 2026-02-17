@@ -1,0 +1,81 @@
+@theme {
+
+    /* Primary Colors (Branding) */
+    --color-primary-50: #fff5f5;
+    --color-primary-100: #ffdada;
+    --color-primary-200: #ffbdbd;
+    --color-primary-300: #ff9191;
+    --color-primary-400: #ff5555;
+    --color-primary-500: #7f0707;
+    /* Base exact color */
+    --color-primary-600: #6b0606;
+    --color-primary-700: #570505;
+    --color-primary-800: #430404;
+    --color-primary-900: #2b0202;
+    --color-primary-950: #1a0101;
+
+    /* Custom Button Text Color */
+    --fi-btn-label-color: white;
+
+    /* You can override any Tailwind or Filament variable here */
+    /* Example: Changing button text globally */
+    --fi-btn-color: var(--color-primary-500);
+}
+
+/* uncomment this if you need the menu color deep black */
+/* Sidebar Group Labels (Parent Menus) */
+/* .fi-sidebar-group-label {
+    @apply text-black font-bold uppercase tracking-wider;
+    color: #000000 !important;
+} */
+
+/* Sidebar Item Labels (Inactive) */
+/* .fi-sidebar-item-label {
+    @apply text-black font-semibold;
+    color: #000000 !important;
+} */
+
+/* .fi-sidebar-item:not(.fi-active) .fi-icon {
+    @apply text-black;
+    color: #000000 !important;
+} */
+/* uncomment this if you need the menu color deep black */
+
+
+/* Specific Active Sidebar Item */
+.fi-sidebar-item.fi-active .fi-sidebar-item-label {
+    @apply font-bold;
+    color: #7f0707 !important;
+}
+
+/* Sidebar Icons */
+.fi-sidebar-active .fi-icon,
+.fi-active .fi-icon {
+    color: #7f0707 !important;
+}
+
+/* Sidebar Hover States */
+.fi-sidebar-item:not(.fi-active):hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    border-radius: 0.5rem;
+}
+
+.fi-sidebar-item:not(.fi-active):hover .fi-sidebar-item-label,
+.fi-sidebar-item:not(.fi-active):hover .fi-icon {
+    color: #7f0707 !important;
+}
+
+/* Buttons */
+.fi-btn.fi-color-primary {
+    @apply transition-colors duration-200;
+    background-color: #7f0707 !important;
+    color: #ffffff !important;
+}
+
+.fi-btn.fi-color-primary:hover {
+    background-color: #6b0606 !important;
+}
+
+.fi-btn.fi-color-primary * {
+    color: #ffffff !important;
+}

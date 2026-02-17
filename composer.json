@@ -1,0 +1,23 @@
+{
+    "name": "adf/filament-theme",
+    "description": "A reusable Filament theme for ADF projects.",
+    "homepage": "https://github.com/girmafeyissa/adf-filament-theme",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Adf\\FilamentTheme\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adf\\FilamentTheme\\AdfFilamentThemeServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0"
+    }
+}
