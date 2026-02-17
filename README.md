@@ -16,8 +16,31 @@ This theme provides a reusable Filament theme for ADF projects, including primar
     ```
     Then run:
     ```bash
+    composer require adf/filament-theme:dev-main
+    ```
+
+> [!NOTE]  
+> If you haven't tagged a version (e.g., `v1.0.0`) in your GitHub repository, you must explicitly require `dev-main` to bypass stability restrictions.
+
+### Alternative: Local Development (Path Repository)
+
+If you are developing the package locally and want to use it in a project on the same machine:
+
+1.  **Add the path repository** to your project's `composer.json`:
+    ```json
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../path/to/adf-filament-theme"
+        }
+    ]
+    ```
+
+2.  **Install the package**:
+    ```bash
     composer require adf/filament-theme
     ```
+    This will create a symlink in the `vendor` directory to your local package folder.
 
 
 2.  **Publish the Assets**:
